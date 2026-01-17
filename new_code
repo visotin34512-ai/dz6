@@ -1,0 +1,5 @@
+d = {}
+while n := int(input()):
+    print(f'значение из кэша: {d[n]}' if n in d else (r := round(n**.5, 2)))
+    d[n] = r
+    
