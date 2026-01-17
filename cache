@@ -1,0 +1,9 @@
+cache = {}
+key = int(input())
+while key:
+    if key in cache.keys():
+        print(f'значение из кэша: {cache[key]}')
+    else:
+        cache[key] = round(key ** 0.5, 2)
+        print(cache[key])
+    key = int(input())
